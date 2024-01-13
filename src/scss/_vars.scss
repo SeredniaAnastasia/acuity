@@ -21,6 +21,7 @@
   --blue: #283849;
   --button-color: #283849;
   --buttom-text: #0E0E0E;
+  --light-gray: #f4f4f4;
 
   //font-size
   --fz-12: 0.75rem;
@@ -30,6 +31,12 @@
   --fz-21: 1.313rem;
   --fz-23: 1.438rem;
   --fz-37: 2.313rem;
+  
+  @media (max-width: 500px){
+    --fz-37: 1.8rem;
+}
+
+
 }
 
 

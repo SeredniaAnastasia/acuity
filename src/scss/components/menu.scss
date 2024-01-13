@@ -9,7 +9,7 @@
     }
     
     &__item {
-    
+        
     }
     
     &__link {
@@ -19,6 +19,7 @@
         padding: 5px;
         border-radius: 12px;
         transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
     }
 
     &__link:hover {
@@ -37,7 +38,7 @@
     position: fixed;
     transform: translateY(-205%);
     transition: transform 0.3s ;
-    background-color: antiquewhite;
+    background-color: var(--light-gray);
     width: 100%;
     top: 0;
     left: 0;
@@ -66,5 +67,11 @@
         position: absolute;
         top: 27px;
         right: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .burger{
+        right: 19px;
     }
 }
