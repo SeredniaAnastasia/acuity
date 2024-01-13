@@ -3,10 +3,35 @@
 :root {
   // base
   --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
-  --container-offset: 15px;
+
+  --content-width: 1440px;
+  --container-offset: 20px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
+  --content-width-small: 928px;
+  --container-width-small: calc(var(--content-width) + (var(--container-offset) * 2));
+
   // colors
-  --light-color: #fff;
+  --white: #fff;
+  --black: #000;
+  --accent: #5F93C0;
+  --text-color: #222222;
+  --text-color-black: #1E1E1E;
+  --gray: #6F6F6F;
+  --blue: #283849;
+  --button-color: #283849;
+  --buttom-text: #0E0E0E;
+
+  //font-size
+  --fz-12: 0.75rem;
+  --fz-14: 0.875rem;
+  --fz-16: 1rem;
+  --fz-18: 1.125rem;
+  --fz-21: 1.313rem;
+  --fz-23: 1.438rem;
+  --fz-37: 2.313rem;
 }
+
+
+
+

@@ -8,3 +8,21 @@
     font-style: $style;
   }
 }
+
+
+
+@mixin InterMedium{
+  font-family: "InterMedium", sans-serif;
+}
+
+@mixin InterRegular{
+  font-family: "InterRegular", sans-serif;
+}
+
+@mixin QuicksandMedium{
+  font-family: "QuicksandMedium", sans-serif;
+}
+
+@mixin QuicksandRegular{
+  font-family: "QuicksandRegular", sans-serif;
+}
