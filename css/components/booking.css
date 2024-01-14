@@ -1,0 +1,32 @@
+/* stylelint-disable */
+.booking__wrapper {
+  margin-bottom: 80px;
+}
+.booking__content {
+  max-width: 572px;
+  color: var(--black);
+  font-family: "InterRegular", sans-serif;
+  margin: 0 auto 84px;
+  text-align: center;
+}
+.booking__title {
+  font-size: var(--fz-37);
+  line-height: 48px;
+  margin-bottom: 23px;
+}
+.booking__text {
+  font-family: "InterRegular", sans-serif;
+  font-size: var(--fz-16);
+  line-height: 26px;
+}
+.booking__img img {
+  width: 718px;
+  margin: 0 auto;
+}
+
+@media (max-width: 620px) {
+  .booking__content {
+    margin: 0 auto 45px;
+  }
+}
+/*# sourceMappingURL=booking.css.map */

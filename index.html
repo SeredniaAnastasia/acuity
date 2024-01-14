@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>acuity: scheduling</title>
+  <link rel="preload" href="fonts/InterRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__top">
+
+        <a class="header__logo logo" href="#">
+          <img src="./img/logo.svg" alt="acuity:scheduling logo">
+        </a>
+        <div class="header__right">
+          <button class="btn-reset burger" aria-label="Open menu" aria-expanded="false" data-burger>
+          <span class="burger__line"></span>
+          </button>
+          <nav class="header__menu menu" data-menu >
+            <ul class="menu__list">
+              <li class="menu__item" data-menu-item>
+                <a class="menu__link" href="#">Pricing</a>
+              </li>
+              <li class="menu__item" data-menu-item>
+                <a class="menu__link" href="#">Help</a>
+              </li>
+              <li class="menu__item" data-menu-item>
+                <a class="menu__link" href="#">log in</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__btn" aria-label="Try scheduling">Try scheduling</button>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="header__main-text">
+              <h1 class="header__main-title">Flexible scheduling software to help you succeed</h1>
+              <p class="header__main-subtitle">
+                With seamless client scheduling, secure payments, and workflow
+                automation, all you have to do is show up on time.</p>
+               <button class="header__main-btn" aria-label="Try scheduling">Try scheduling</button>
+               <p class="header__main-desc">
+                No credit card needed
+               </p>
+        </div>
+        <div class="header__main-slider slider-header">
+          <ul class="slider-header__list variable-width">
+            <li class="slider-header__item">
+              <a class="slider-header__link" href="#">
+               <picture>
+                <source srcset="./img/header/blowout@2x.webp" type="image/webp">
+                <img loading="lazy" src="./img/header/blowout@2x.jpg" class="slider-header__img" width="400" height="225" alt="blowout">
+              </picture>
+              </a>
+            </li>
+            <li class="slider-header__item">
+              <a class="slider-header__link" href="#">
+               <picture>
+                <source srcset="./img/header/hair@2x.webp" type="image/webp">
+                <img loading="lazy" src="./img/header/hair@2x.jpg" class="slider-header__img" width="400" height="225" alt="hair appointment">
+              </picture>
+              </a>
+            </li>
+            <li class="slider-header__item">
+              <a class="slider-header__link" href="#">
+               <picture>
+                <source srcset="./img/header/reiki@2x.webp" type="image/webp">
+                <img loading="lazy" src="./img/header/reiki@2x.jpg" class="slider-header__img" width="400" height="225" alt="reiki session">
+              </picture>
+              </a>
+            </li>
+            <li class="slider-header__item">
+              <a class="slider-header__link" href="#">
+               <picture>
+                <source srcset="./img/header/lens@2x.webp" type="image/webp">
+                <img loading="lazy" src="./img/header/lens@2x.jpg" class="slider-header__img" width="400" height="225" alt="lens adjustment">
+              </picture>
+              </a>
+            </li>
+            <li class="slider-header__item">
+              <a class="slider-header__link" href="#">
+               <picture>
+                <source srcset="./img/header/car@2x.webp" type="image/webp">
+                <img loading="lazy" src="./img/header/car@2x.jpg" class="slider-header__img" width="400" height="225" alt="car detailing">
+              </picture>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- <div class="video-fashion__popup">
+          <a class="video-fashion__play" data-fancybox data-width="640" data-height="360" href="https://www.youtube.com/watch?v=MoN9ql6Yymw">
+            <img src="./img/play.svg" alt="video play button">
+          </a>
+          <div class="card-body">
+            <p class="card-text">HTML5 video from the page</p>
+          </div>
+        </div> -->
+        <div class="card-deck col-9">
+
+          <div class="card">
+            <a data-fancybox href="#myVideo">
+              <img class="card-img-top img-fluid" src="https://www.html5rocks.com/en/tutorials/video/basics/poster.png" />
+            </a>
+
+            <div class="card-body">
+              <p class="card-text">HTML5 video from the page</p>
+            </div>
+
+            <video width="640" height="320" controls id="myVideo" style="display:none;">
+              <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
+              <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
+              <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
+              Your browser doesn’t support HTML5 video tag.
+            </video>
+
+          </div>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox]', {
+        // Custom options
+      });    
+
+      $('.card-deck a').fancybox({
+  caption : function( instance, item ) {
+    return $(this).parent().find('.card-text').html();
+  }
+});
+    </script>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="about">
+        <div class="container-small">
+          <h2 class="visually-hidden">About</h2>
+          <div class="about__wrapper">
+            <div class="about__item1 about__horizontal">
+              <div class="about__content">
+                  <h3 class="about__content-title">Control your availability with ease</h3>
+                  <p class="about__content-text">
+                    Tools to help you schedule and earn on your own
+                    terms–customize exactly how and when clients
+                    can book with you, host virtual appointments or
+                    classes, and block off personal time.
+                  </p>
+              </div>
+              <div class="about__img">
+                <img src="./img/about/image1@2x.jpg" alt="cardio bootcamp">
+              </div>
+            </div>
+            <div class="about__item2 about__vertical">
+              <div class="about__content">
+                  <h3 class="about__content-title">Enable automated appointment booking</h3>
+                  <p class="about__content-text">
+                    Seamlessly manage multiple locations and let
+                    clients easily cancel or reschedule their own
+                    appointments. Send automated receipts as well
+                    as reminder notifications throughout the
+                    scheduling process to keep clients prompt.
+                  </p>
+              </div>
+              <div class="about__img">
+                <img src="./img/about/image2@2x.jpg" alt="booking confirmed">
+              </div>
+            </div>
+            <div class="about__item3 about__vertical">
+              <div class="about__content">
+                  <h3 class="about__content-title">Grow your customer base and keep them engaged</h3>
+                  <p class="about__content-text">
+                    Create custom intake forms to streamline and
+                    personalize your customer experience. Use
+                    powerful loyalty tools to drive business growth
+                    and keep customers coming back.
+                  </p>
+              </div>
+              <div class="about__img">
+                <img src="./img/about/image3@2x.jpg" alt="create custom">
+              </div>
+            </div>
+            <div class="about__item4 about__horizontal">
+              <div class="about__content">
+                  <h3 class="about__content-title">Protect your time and maximize your income</h3>
+                  <p class="about__content-text">
+                    Get peace of mind with no-show protection tools
+                    like storing credit cards and secure deposits.
+                    Seamlessly offer recurring subscriptions,
+                    packages, and gift cards to up your earnings.
+                  </p>
+              </div>
+              <div class="about__img">
+                <img src="./img/about/image4@2x.jpg" alt="protect your time">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="booking">
+        <div class="container-small">
+          <div class="booking__wrapper">
+            <div class="booking__content">
+              <h2 class="booking__title">Automated booking, built to save you time</h2>
+              <p class="booking__text">
+                Get a branded scheduling page that showcases your services and real-time
+                availability. With easy payment and intake forms, your scheduler is
+                everything your clients need to self-schedule appointments.
+              </p>
+            </div>
+            <div class="booking__img">
+              <img src="./img/booking/asana-manana@2x.jpg" alt="asana-manana ">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <picture>
+        <source srcset="img/cover.webp" type="image/webp">
+        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
+      </picture> -->
+    </main>
+    <footer class="footer">
+  <div class="container"></div>
+</footer>
+
+  </div>
+</body>
+
+</html>
