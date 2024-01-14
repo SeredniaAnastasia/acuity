@@ -1,0 +1,44 @@
+@import "../mixins/font-face";
+
+.booking {
+    &__wrapper {
+        margin-bottom: 80px;
+    }
+
+    &__content {
+        max-width: 572px;
+        color: var(--black);
+        @include InterRegular;
+        margin: 0 auto 84px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: var(--fz-37);
+        line-height: 48px;
+        margin-bottom: 23px;
+    }
+
+    &__text {
+        @include InterRegular;
+        font-size: var(--fz-16);
+        line-height: 26px;
+
+    }
+
+    &__img {
+        img{
+            width: 718px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media (max-width: 620px){
+    .booking{
+        &__content {
+            margin: 0 auto 45px;
+        }
+    }
+}

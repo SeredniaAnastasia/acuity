@@ -1,0 +1,139 @@
+@import "../mixins/font-face";
+
+
+.about {
+    margin-bottom: 180px;
+    &__wrapper {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__item1 {
+        grid-row: 1 / 2;
+    }
+    &__content {
+        padding-top: 64px;
+        padding-left: 64px;
+    }
+    &__content-title {
+        @include InterRegular;
+        color: var(--text-color);
+        font-size: var(--fz-23);
+        line-height: 24px;
+        margin-bottom: 7px;
+    }
+    &__content-text {
+        @include InterRegular;
+        color: var(--text-color);
+        font-size: var(--fz-14);
+        line-height: 25px;
+    }
+    &__img {
+        img{
+            width: 464px;
+            height: 383px;
+            border-radius: 22px;
+        }
+    }
+  
+    &__item4 {
+        grid-row: 3 / 4;
+    }
+
+    &__horizontal{
+        display: flex;
+        justify-content: space-between;
+        grid-column: 1 / 3;
+        max-width: 928px;
+        width: 100%;
+        justify-self: center;
+        background-color: var(--light-gray);
+        border-radius: 22px;
+        h2, p{
+            max-width: 336px;
+        }
+    }
+
+    &__vertical{
+        background-color: var(--light-gray);
+        border-radius: 22px;
+        justify-self: center;
+        max-width: 455px;
+        width: 100%;
+        min-height: 602px;
+
+        h3, p{
+            max-width: 326px;
+        }
+
+        img{
+            margin: 0 auto;
+        }
+    }
+
+    
+    
+}
+
+
+@media (max-width: 925px){
+    .about{
+        &__img {
+            img{
+                width: 390px;
+                height: 300px;
+            }
+        }
+        &__content {
+            padding-top: 30px;
+            padding-left: 30px;
+        }
+        &__vertical {
+            min-height: 530px;
+        }
+    }
+}
+
+
+@media (max-width: 783px){
+    .about{
+        &__img {
+            img{
+                width: 270px;
+                height: 219px;
+            }
+        }
+        &__vertical{
+            min-height: 490px;
+            h3, p{
+                max-width: 250px;
+            }
+        }
+        &__horizontal{
+            h3, p{
+                max-width: 270px;
+            }
+        }
+    }
+}
+
+@media (max-width: 620px){
+    .about{
+        margin-bottom: 60px;
+        &__wrapper {
+           display: block;
+        }
+        &__horizontal{
+            display: block;
+            max-width: 330px;
+            margin: 0 auto 20px;
+            img{
+                margin: 0 auto;
+            }
+        }
+        &__vertical {
+            max-width: 330px;
+            margin: 0 auto 20px;
+        }
+    }
+}

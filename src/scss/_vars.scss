@@ -9,7 +9,7 @@
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   --content-width-small: 928px;
-  --container-width-small: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-width-small: calc(var(--content-width-small) + (var(--container-offset) * 2));
 
   // colors
   --white: #fff;
