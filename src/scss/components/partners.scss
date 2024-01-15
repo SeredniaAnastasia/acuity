@@ -1,0 +1,29 @@
+@import "../mixins/font-face";
+
+
+.partners {
+    margin-bottom: 40px;
+    &__wrapper {
+        padding: 64px 20px;
+        background-color: var(--light-blue);
+        border-radius: 22px;
+    }
+    &__title {
+        @include InterRegular;
+        color: var(--black);
+        text-align: center;
+        font-size: var(--fz-18);
+        line-height: 22px;
+        margin-bottom: 64px;
+    }
+    &__list {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
+    &__item {
+    }
+    &__link {
+    }
+}
+

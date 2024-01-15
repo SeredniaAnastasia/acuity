@@ -1,0 +1,75 @@
+@import "../mixins/font-face";
+
+
+.our-benefits {
+    &__wrapper {
+        max-width: 1164px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px 64px 30px;
+    }
+
+    &__title {
+        color: var(--buttom-text);
+        font-size: var(--fz-37);
+        @include InterRegular;
+        line-height: 48px;
+        max-width: 332px;
+    }
+
+    &__text {
+        color: var(--text-color-black);
+        @include QuicksandRegular;
+        font-size: var(--fz-16);
+        line-height: 26.6px;
+        max-width: 393px;
+        align-self: flex-end;
+    }
+
+    &__cards {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 50px;
+        
+    }
+
+    &__card {
+        position: relative;
+        width: 247px;
+        height: 166px;
+        padding: 55px 25px 22px 0px;
+
+    }
+
+    &__card::before {
+        position: absolute;
+        counter-increment: number;
+        content: counter(number, decimal-leading-zero);
+        color: var(--text-color-black);
+        font-size: var(--fz-21);
+        line-height: 28.8px;
+        @include InterRegular;
+        top: 1px;
+
+    }
+
+    &__desc {
+        color: var(--gray);
+        @include QuicksandRegular;
+        font-size: var(--fz-16);
+        line-height: 22.4px;
+        max-width: 240px;
+        span{
+            color: var(--text-color-black);
+        }
+    }
+
+}
+
+
