@@ -2,6 +2,7 @@
   "name": "gulp-builder",
   "version": "2.1.0",
   "description": "gulp-builder for weblayout",
+  "homepage": "https://github.com/eliofery/acuity",
   "main": "gulpfile.js",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
@@ -10,7 +11,8 @@
     "cache": "gulp cache",
     "backend": "gulp backend",
     "zip": "gulp zip",
-    "code": "editorconfig-checker"
+    "code": "editorconfig-checker",
+    "deploy": "gh-pages -d app"
   },
   "author": "MaxGraph",
   "license": "ISC",
@@ -41,6 +43,7 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svgmin": "^4.1.0",
     "gulp-typograf": "^4.0.3",
+    "gh-pages": "^6.1.1",
     "gulp-webp": "^4.0.1",
     "gulp-zip": "^5.1.0",
     "jquery": "^3.7.1",

@@ -1,7 +1,8 @@
 @import "../mixins/font-face";
 
 .booking {
-    &__wrapper {
+    margin-bottom: 120px;
+    &__top{
         margin-bottom: 80px;
     }
 
@@ -32,13 +33,97 @@
             margin: 0 auto;
         }
     }
+
+    &__bottom-content {
+        display: flex;
+        justify-content: space-between;
+        @include InterRegular;
+        padding: 0px 60px 70px 60px;
+        color: var(--text-color-black);
+    }
+
+    &__bottom-title {
+        line-height: 48px;
+        font-size: var(--fz-37);
+        max-width: 418px;
+        
+    }
+
+    &__bottom-text {
+        font-size: var(--fz-16);
+        line-height: 19px;
+        max-width: 518px;
+        align-self: flex-end;
+    }
+
+    &__bottom-slider {
+
+    }
+
+    .slick-slide {
+        margin: 0 10px;
+    }
+
+
+    .slider-booking__list {
+    }
+    .slider-booking__item {
+    }
+    .slider-booking__link {
+    }
+    .slider-booking__img {
+        margin-bottom: 20px;
+    }
 }
 
+
+@media (max-width: 800px){
+    .booking{
+        &__bottom-content {
+            padding: 0px 27px 70px 27px;
+        }
+
+        &__bottom-title {
+            line-height: 33px;
+            font-size: var(--fz-23);
+            max-width: 240px;
+        }
+
+        &__bottom-text {
+            max-width: 230px;
+        }
+    }
+}
 
 @media (max-width: 620px){
     .booking{
         &__content {
             margin: 0 auto 45px;
+        }
+    }
+}
+
+
+
+@media (max-width: 460px){
+    .booking{
+        &__bottom-content {
+            display: block;
+            padding: 0px 27px 40px 27px;
+        }
+
+        &__bottom-title {
+          margin-bottom: 10px;
+        }
+
+        &__title {
+            font-size: var(--fz-23);
+            line-height: 38px;
+            margin-bottom: 23px;
+        }
+
+        &__top {
+            margin-bottom: 40px;
         }
     }
 }

@@ -19,3 +19,16 @@ $('.variable-width').slick({
     centerMode: true,
     variableWidth: true
   });
+
+
+  $('.booking-slider').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true
+  });
