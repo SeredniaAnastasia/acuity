@@ -14500,6 +14500,17 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.variable-width').slick({
   centerMode: true,
   variableWidth: true
 });
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.booking-slider').slick({
+  dots: false,
+  arrows: true,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true
+});
 })();
 
 /******/ })()

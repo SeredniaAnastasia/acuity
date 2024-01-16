@@ -1,0 +1,29 @@
+/* stylelint-disable */
+.partners {
+  margin-bottom: 40px;
+}
+.partners__wrapper {
+  padding: 64px 20px;
+  background-color: var(--light-blue);
+  border-radius: 22px;
+}
+.partners__title {
+  font-family: "InterRegular", sans-serif;
+  color: var(--black);
+  text-align: center;
+  font-size: var(--fz-18);
+  line-height: 22px;
+  margin-bottom: 64px;
+}
+.partners__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 24px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/*# sourceMappingURL=partners.css.map */

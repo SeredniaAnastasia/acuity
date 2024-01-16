@@ -108,25 +108,26 @@
             <p class="card-text">HTML5 video from the page</p>
           </div>
         </div> -->
-        <div class="card-deck col-9">
+        <!-- <div class="card-deck col-9">
 
           <div class="card">
             <a data-fancybox href="#myVideo">
               <img class="card-img-top img-fluid" src="https://www.html5rocks.com/en/tutorials/video/basics/poster.png" />
             </a>
-
+      
             <div class="card-body">
               <p class="card-text">HTML5 video from the page</p>
             </div>
-
+      
             <video width="640" height="320" controls id="myVideo" style="display:none;">
               <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
               <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
               <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
-              Your browser doesn’t support HTML5 video tag.
+              Your browser doesn't support HTML5 video tag.
             </video>
-
-          </div>
+      
+      
+          </div> -->
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
       Fancybox.bind('[data-fancybox]', {
@@ -212,27 +213,318 @@
       <section class="booking">
         <div class="container-small">
           <div class="booking__wrapper">
-            <div class="booking__content">
-              <h2 class="booking__title">Automated booking, built to save you time</h2>
-              <p class="booking__text">
-                Get a branded scheduling page that showcases your services and real-time
-                availability. With easy payment and intake forms, your scheduler is
-                everything your clients need to self-schedule appointments.
+            <div class="booking__top">
+              <div class="booking__content">
+                <h2 class="booking__title">Automated booking, built to save you time</h2>
+                <p class="booking__text">
+                  Get a branded scheduling page that showcases your services and real-time
+                  availability. With easy payment and intake forms, your scheduler is
+                  everything your clients need to self-schedule appointments.
+                </p>
+              </div>
+              <div class="booking__img">
+                <img src="./img/booking/asana-manana@2x.jpg" alt="asana-manana ">
+              </div>
+            </div>
+          </div>
+        </div>
+            <div class="booking__bottom">
+              <div class="container">
+                <div class="booking__bottom-wrapper">
+                  <div class="booking__bottom-content">
+                    <h3 class="booking__bottom-title">Appointment booking software that adapts for you</h3>
+                    <p class="booking__bottom-text">
+                      Free up time in your day with dynamic scheduling tools tailored to
+                      your needs
+                    </p>
+                  </div>
+                  <div class="booking__bottom-slider">
+                    <ul class="slider-booking__list booking-slider">
+                      <li class="slider-booking__item">
+                        <a class="slider-booking__link" href="#">
+                          <figure>
+                            <picture>
+                              <source srcset="./img/booking/education@2x.webp" type="image/webp">
+                              <img loading="lazy" src="./img/booking/education@2x.jpg" class="slider-booking__img" width="350" height="240" alt="financial">
+                            </picture>
+                            <figcaption>Education and Tutoring</figcaption>
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="slider-booking__item">
+                        <a class="slider-booking__link" href="#">
+                          <figure>
+                            <picture>
+                              <source srcset="./img/booking/financial@2x.webp" type="image/webp">
+                              <img loading="lazy" src="./img/booking/financial@2x.jpg" class="slider-booking__img" width="350" height="240" alt="financial">
+                            </picture>
+                            <figcaption>Financial, Public and Legal Services</figcaption>
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="slider-booking__item">
+                        <a class="slider-booking__link" href="#">
+                          <figure>
+                            <picture>
+                              <source srcset="./img/booking/pet@2x.webp" type="image/webp">
+                              <img loading="lazy" src="./img/booking/pet@2x.jpg" class="slider-booking__img" width="350" height="240" alt="financial">
+                            </picture>
+                            <figcaption>Pet Care and Grooming</figcaption>
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="slider-booking__item">
+                        <a class="slider-booking__link" href="#">
+                          <figure>
+                            <picture>
+                              <source srcset="./img/booking/utility@2x.webp" type="image/webp">
+                              <img loading="lazy" src="./img/booking/utility@2x.jpg" class="slider-booking__img" width="350" height="240" alt="financial">
+                            </picture>
+                            <figcaption>Automotive and Maintenance</figcaption>
+                          </figure>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+      <section class="our-benefits">
+        <div class="container">
+          <div class="our-benefits__wrapper">
+            <div class="our-benefits__content">
+              <h3 class="our-benefits__title">More than just a scheduling tool.</h3>
+              <p class="our-benefits__text">
+                A cohesive, user-friendly scheduling software made to support you every step of the way.
               </p>
             </div>
-            <div class="booking__img">
-              <img src="./img/booking/asana-manana@2x.jpg" alt="asana-manana ">
+            <ul class="our-benefits__cards">
+              <li class="our-benefits__card">
+                <p class="our-benefits__desc">
+                  <span>Manage everything</span><br>
+                  sync calendars, control staff
+                  permissions, and work on the go
+                  with our mobile app.
+                </p>
+              </li>
+              <li class="our-benefits__card">
+                <p class="our-benefits__desc">
+                  <span>Accept online payments</span><br>
+                  using trusted payment
+                  processors, invoices, and
+                  multiple payment options like
+                  tips and deposits.
+                </p>
+              </li>
+              <li class="our-benefits__card">
+                <p class="our-benefits__desc">
+                  <span>Increase revenue</span><br>
+                  with gift certificates, packages,
+                  memberships, or group classes.
+                  Upsell with add-ons.
+                </p>
+              </li>
+              <li class="our-benefits__card">
+                <p class="our-benefits__desc">
+                  <span>Feel confident</span><br>
+                  knowing client information is
+                  private with built-in HIPAA
+                  compliance.
+                </p>
+              </li>
+              <li class="our-benefits__card">
+                <p class="our-benefits__desc">
+                  <span>Reduce no-shows</span><br>
+                  by sending automated email or
+                  SMS notifications and vaulting
+                  credit cards to enforce late fees.
+                </p>
+              </li>
+              <li class="our-benefits__card">
+                <p class="our-benefits__desc">
+                  <span>Impress clients</span><br>
+                  by offering virtual appointments.
+                  Send personalized intake forms
+                  and store client details.
+                </p>
+              </li>
+              <li class="our-benefits__card">
+                <p class="our-benefits__desc">
+                  <span>Get booked</span><br>
+                  through social media, email, or
+                  your website. Build a beautiful
+                  web presence with
+                  Squarespace.
+                </p>
+              </li>
+              <li class="our-benefits__card">
+                <p class="our-benefits__desc">
+                  <span>Customize everything</span><br>
+                  to match your brand experience
+                  and limit how and when clients
+                  book.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <div class="partners__wrapper">
+            <h3 class="partners__title">Integrate with powerful third-party apps.</h3>
+            <ul class="partners__list">
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="./img/partners/Item1.svg" alt="stripe">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="./img/partners/Item2.svg" alt="stripe">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="./img/partners/Item3.svg" alt="stripe">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="./img/partners/Item4.svg" alt="stripe">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="./img/partners/Item5.svg" alt="stripe">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="support">
+        <div class="container">
+          <div class="support__wrapper">
+            <div class="support__content">
+              <h3 class="support__title">Knowing your name is only the beginning.</h3>
+              <p class="support__text">
+                Our global award-winning team of real (awesome)
+                humans proudly support over 250,000 customers.
+                Whatever you need, we’ll be there to help you take
+                over the world, one problem-solving conversation at
+                a time.
+              </p>
+              <ul class="support__list">
+                <li class="support__item">
+                  <a class="support__link" href="#">Visit Help Center</a>
+                </li>
+                <li class="support__item">
+                  <a class="support__link" href="#">Contact Support</a>
+                </li>
+                <li class="support__item">
+                  <a class="support__link" href="#">Webinars</a>
+                </li>
+                <li class="support__item">
+                  <a class="support__link" href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="support__img">
+              <img src="./img/support@2x.png" alt="support img">
             </div>
           </div>
         </div>
       </section>
+
       <!-- <picture>
         <source srcset="img/cover.webp" type="image/webp">
         <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
       </picture> -->
     </main>
     <footer class="footer">
-  <div class="container"></div>
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__language">
+        <select name="footer__language-select">
+          <option value="1">English</option>
+          <option value="2">Spanish</option>
+          <option value="3">Italian</option>
+          <option value="4">China</option>
+        </select>
+      </div>
+        <a class="footer__logo logo" href="#">
+          <img src="./img/logo-footer.svg" alt="acuity:scheduling logo">
+        </a>
+        <div class="footer__nav">
+          <div class="footer__links">
+            <h3 class="footer__links-title">Quick Links</h3>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">Home</a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">Plans & Sign up</a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">Enterprise</a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">Help & Support</a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">Acuity Certified Experts</a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">Log in</a>
+              </li>
+              <br>
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">API Documentation</a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">Privacy & Cookie Policy</a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">Terms of Service</a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">Accessibility Statement</a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">Uptime</a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-link" href="#">Build a website</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__follow">
+            <h3 class="footer__follow-title">Follow</h3>
+            <ul class="footer__follow-list">
+              <li class="footer__follow-item">
+                <a class="footer__follow-link" href="#">Blog</a>
+              </li>
+              <li class="footer__follow-item">
+                <a class="footer__follow-link" href="#">Instagram</a>
+              </li>
+              <li class="footer__follow-item">
+                <a class="footer__follow-link" href="#">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__touch">
+            <h3 class="footer__touch-title">Stay In Touch</h3>
+            <ul class="footer__touch-list">
+              <li class="footer__touch-item">
+                <a class="footer__touch-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
 </footer>
 
   </div>

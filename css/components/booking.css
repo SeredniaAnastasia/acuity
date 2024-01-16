@@ -1,5 +1,8 @@
 /* stylelint-disable */
-.booking__wrapper {
+.booking {
+  margin-bottom: 120px;
+}
+.booking__top {
   margin-bottom: 80px;
 }
 .booking__content {
@@ -23,10 +26,105 @@
   width: 718px;
   margin: 0 auto;
 }
+.booking__bottom-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "InterRegular", sans-serif;
+  padding: 0px 160px 70px 160px;
+  color: var(--text-color-black);
+}
+.booking__bottom-title {
+  line-height: 48px;
+  font-size: var(--fz-37);
+  max-width: 418px;
+}
+.booking__bottom-text {
+  font-size: var(--fz-16);
+  line-height: 19px;
+  max-width: 518px;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+.booking .slick-slide {
+  margin: 0 10px;
+}
+.booking .slider-booking__img {
+  margin-bottom: 20px;
+}
+.booking .slick-prev, .booking .slick-next {
+  top: -30px;
+  right: 0;
+}
+.booking .slick-prev {
+  left: inherit;
+  right: 40px;
+}
+.booking .slick-next {
+  right: 0;
+}
+.booking .slick-prev::before {
+  content: "";
+  position: absolute;
+  background-image: url("./../../img/left.svg");
+  width: 15px;
+  height: 12px;
+  top: 0;
+  right: 0;
+}
+.booking .slick-next::after {
+  content: "";
+  position: absolute;
+  background-image: url("./../../img/right.svg");
+  width: 15px;
+  height: 12px;
+  top: 0;
+  right: 0;
+}
 
+@media (max-width: 800px) {
+  .booking__bottom-content {
+    padding: 0px 27px 70px 27px;
+  }
+  .booking__bottom-title {
+    line-height: 33px;
+    font-size: var(--fz-23);
+    max-width: 240px;
+  }
+  .booking__bottom-text {
+    max-width: 230px;
+  }
+}
 @media (max-width: 620px) {
+  .booking {
+    margin-bottom: 70px;
+  }
   .booking__content {
     margin: 0 auto 45px;
+  }
+}
+@media (max-width: 460px) {
+  .booking__bottom-content {
+    display: block;
+    padding: 0px 27px 40px 27px;
+  }
+  .booking__bottom-title {
+    margin-bottom: 10px;
+  }
+  .booking__title {
+    font-size: var(--fz-23);
+    line-height: 38px;
+    margin-bottom: 23px;
+  }
+  .booking__top {
+    margin-bottom: 40px;
+  }
+  .booking .slider-booking__img {
+    width: 250px;
+    height: 170px;
   }
 }
 /*# sourceMappingURL=booking.css.map */
