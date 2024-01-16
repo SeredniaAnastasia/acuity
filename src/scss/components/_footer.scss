@@ -1,0 +1,94 @@
+@import "../mixins/font-face";
+
+.footer {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 40px 0 40px;
+    }
+
+    &__language {
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+    }
+
+    &__logo {
+        grid-column: 1 / 2;
+        grid-row: 2 / 2;
+    }
+
+    &__nav {
+       display: flex;
+       min-height: 274px;
+       flex-wrap: wrap;
+       gap: 8px;
+    }
+
+    &__links {
+        display: inline-block;
+    }
+
+    &__links-title {
+        @include QuicksandRegular;
+        color: var(--buttom-text);
+        font-size: var(--fz-16);
+        margin-bottom: 30px;
+    }
+
+
+    &__links-item {
+        margin-bottom: 14px;
+    }
+
+    &__links-link {
+        @include QuicksandRegular;
+        color: var(--buttom-text);
+        font-size: var(--fz-16);
+    }
+
+
+    &__follow {
+        display: inline-block;
+    }
+
+    &__follow-title {
+        @include QuicksandMedium;
+        color: var(--buttom-text);
+        font-size: var(--fz-16);
+        margin-bottom: 30px;
+    }
+
+    &__follow-item {
+        margin-bottom: 14px;
+    }
+
+    &__follow-link {
+        @include QuicksandRegular;
+        color: var(--buttom-text);
+        font-size: var(--fz-16);
+    }
+
+    &__touch {
+        display: inline-block;
+    }
+
+    &__touch-title {
+        @include QuicksandMedium;
+        color: var(--buttom-text);
+        font-size: var(--fz-16);
+        margin-bottom: 30px;
+    }
+
+
+    &__touch-item {
+        margin-bottom: 14px;
+    }
+
+    &__touch-link {
+        @include QuicksandRegular;
+        color: var(--buttom-text);
+        font-size: var(--fz-16);
+    }
+
+}
+

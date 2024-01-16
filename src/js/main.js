@@ -23,7 +23,7 @@ $('.variable-width').slick({
 
   $('.booking-slider').slick({
     dots: false,
-    arrows: false,
+    arrows: true,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,

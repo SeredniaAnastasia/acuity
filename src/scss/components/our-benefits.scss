@@ -36,6 +36,7 @@
         justify-content: center;
         grid-template-columns: repeat(auto-fill, 240px);
         gap: 50px;
+        counter-reset: number;
         
     }
 
@@ -73,3 +74,30 @@
 }
 
 
+
+@media (max-width: 650px){
+  .our-benefits{
+    &__title {
+        font-size: var(--fz-23);
+        line-height: 32px;
+        max-width: 260px;
+    }
+    &__text{
+        max-width: 230px;
+    }
+  }
+
+}
+
+
+@media (max-width: 500px){
+    .our-benefits{
+        &__content {
+           display: block;
+           padding: 0 20px 45px 20px;
+        }
+        &__title {
+            margin-bottom: 10px;
+        }
+    }
+}
