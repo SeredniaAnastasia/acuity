@@ -143,6 +143,42 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/functions/auto-height.js":
+/*!*****************************************!*\
+  !*** ./src/js/functions/auto-height.js ***!
+  \*****************************************/
+/***/ (() => {
+
+console.log('auto');
+function autoHeight(parentElementsClass) {
+  let parentElements = document.querySelector("." + parentElementsClass);
+  const elements = document.querySelectorAll("." + parentElementsClass + " > li");
+  const counter = elements.length;
+  const counterHalf = Math.ceil(counter / 2);
+  let heightBlock = 0;
+  for (let i = 0; i < counterHalf; i++) {
+    let stylesLeft = window.getComputedStyle(elements[i]);
+    let heightLeft = parseFloat(stylesLeft.getPropertyValue('height')) + parseFloat(stylesLeft.getPropertyValue('margin-bottom'));
+    if (i + counterHalf < counter) {
+      let stylesRight = window.getComputedStyle(elements[i + counterHalf]);
+      let heightRight = parseFloat(stylesRight.getPropertyValue('height')) + parseFloat(stylesRight.getPropertyValue('margin-bottom'));
+      if (heightLeft === heightRight) {
+        heightBlock += heightLeft;
+      } else {
+        heightBlock += Math.max(heightLeft, heightRight);
+        elements[i].style.height = Math.max(heightLeft, heightRight) + "px";
+        elements[i + counterHalf].style.height = Math.max(heightLeft, heightRight) + "px";
+      }
+    } else {
+      heightBlock += heightLeft;
+    }
+  }
+  parentElements && (parentElements.style.height = heightBlock + 15 + "px");
+}
+autoHeight("footer__links-list");
+
+/***/ }),
+
 /***/ "./src/js/functions/burger.js":
 /*!************************************!*\
   !*** ./src/js/functions/burger.js ***!
@@ -14482,6 +14518,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _functions_burger__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./functions/burger */ "./src/js/functions/burger.js");
+/* harmony import */ var _functions_auto_height__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./functions/auto-height */ "./src/js/functions/auto-height.js");
+/* harmony import */ var _functions_auto_height__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_functions_auto_height__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 

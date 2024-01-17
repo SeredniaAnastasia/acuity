@@ -85,4 +85,10 @@
     margin-bottom: 10px;
   }
 }
+@media (max-width: 500px) {
+  .our-benefits__cards {
+    grid-template-columns: repeat(auto-fill, 310px);
+    gap: 30px;
+  }
+}
 /*# sourceMappingURL=our-benefits.css.map */
