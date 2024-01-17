@@ -5,8 +5,7 @@ import vars from './_vars';
 import './_functions';
 import './_components';
 import './functions/burger';
-
-
+import './functions/auto-height';
 
 $('.variable-width').slick({
     dots: false,

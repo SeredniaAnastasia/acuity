@@ -101,3 +101,12 @@
         }
     }
 }
+
+@media (max-width: 500px){
+    .our-benefits{
+        &__cards {
+            grid-template-columns: repeat(auto-fill, 310px);
+            gap: 30px;
+        }
+    }
+}
