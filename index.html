@@ -6,11 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description", content=siteDescription>
   <meta name="theme-color" content="#111111">
   <title>acuity: scheduling</title>
-  <link rel="preload" href="fonts/InterRegular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css">
+  <meta name="description" content="Описание проекта">
+  <base href="./">
+      <style>
+        @import './css/critical.css';
+      </style>
+  <link rel="preload" as="style" href="css/main.css?v=0.1.12" onload="this.rel='stylesheet'">
+  <noscript>
+      <link rel="stylesheet" href="css/main.css?v=0.1.12">
+  </noscript>
+  <link rel="preload" as="font" href="./fonts/Inter-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="canonical" href="http://localhost:3000">
+  <meta name="application-name" content="Главная страница — Описание проекта">
+  <meta name="apple-mobile-web-app-title" content="Главная страница — Описание проекта">
+  <meta property="og:title" content="Главная страница — Описание проекта">
+  <meta property="og:locale" content="en">
+  <meta property="og:description" content="Описание проекта">
+  <meta property="og:url" content="http://localhost:3000">
+  <meta property="og:site_name" content="Описание проекта">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://localhost:3000/img/cover.jpg">
+  <!-- <meta property="twitter:card" content="summary">
+  <meta property="twitter:title" content="Главная страница — Описание проекта">
+  <meta property="twitter:image" content="http://localhost:3000/img/cover.jpg"> -->
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"WebSite",
+      "headline":"Главная страница — Описание проекта",
+      "description":"Описание проекта",
+      "name":"Описание проекта",
+      "url":"http://localhost:3000"
+    }
+    
+  </script>
+
   <script defer src="js/main.js"></script>
 </head>
 
@@ -472,7 +505,7 @@
   <div class="container">
     <div class="footer__wrapper">
       <div class="footer__language">
-        <select name="footer__language-select">
+        <select aria-label="language-select" name="footer__language-select">
           <option value="1">English</option>
           <option value="2">Spanish</option>
           <option value="3">Italian</option>
