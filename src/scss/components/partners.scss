@@ -22,9 +22,21 @@
         gap: 24px;
         justify-content: center;
     }
-    &__item {
-    }
-    &__link {
+
+    
+
+    &__link:focus {
+        border-radius: 70px;
     }
 }
 
+@media (max-width: 500px){
+    .partners{
+        &__link{
+            img{
+                width: 150px;
+                height: 100px;
+            }
+        }
+    }
+}

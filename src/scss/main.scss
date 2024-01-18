@@ -1,12 +1,13 @@
 // базовые подключения
 @import "vars";
 // @import "vendor/reset";
+// @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css";
 @import "mixins";
 @import "fonts";
 @import "../../node_modules/slick-slider/slick/slick";
 @import "../../node_modules/slick-slider/slick/slick-theme";
-@import "settings";
 
+@import "settings";
 
 // подключения компонентов страницы
 @import "./components/menu";

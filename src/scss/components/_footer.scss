@@ -23,12 +23,24 @@
             background-repeat: no-repeat;
             background-size: 20px 20px;
             background-position: right .7em top 50%, 0 0;
+            // outline: 2px solid var(--black);
+        }
+
+        &__language:focus{
+            outline: 2px solid var(--gray);
+
         }
     }
 
     &__logo {
         grid-column: 1 / 2;
         grid-row: 2 / 2;
+    }
+
+    &__logo:focus{
+        outline: 2px solid var(--blue);
+        padding: 5px;
+        border-radius: 20px;
     }
 
     &__nav {
@@ -76,6 +88,16 @@
         @include QuicksandRegular;
         color: var(--buttom-text);
         font-size: var(--fz-16);
+        transition:  text-decoration 0.3s;
+    }
+
+    &__links-link:focus{
+        outline: 2px solid var(--blue);
+        padding: 3px;
+        border-radius: 10px;
+    }
+    &__links-link:hover{
+        text-decoration: underline;
     }
 
 
@@ -98,6 +120,16 @@
         @include QuicksandRegular;
         color: var(--buttom-text);
         font-size: var(--fz-16);
+        transition: text-decoration 0.3s;
+    }
+    &__follow-link:focus{
+        outline: 2px solid var(--blue);
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    &__follow-link:hover{
+        text-decoration: underline;
     }
 
     &__touch {
@@ -120,7 +152,17 @@
         @include QuicksandRegular;
         color: var(--buttom-text);
         font-size: var(--fz-16);
+        transition: text-decoration 0.3s;
     }
 
+    &__touch-link:focus{
+        outline: 2px solid var(--blue);
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    &__touch-link:hover{
+        text-decoration: underline;
+    }
 }
 

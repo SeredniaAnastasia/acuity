@@ -26,6 +26,11 @@
         &__logo{
             width: 168px;
         }
+        &__logo:focus{
+            padding: 5px;
+            outline: 2px solid var(--blue);
+            border-radius: 20px;
+        }
 
         &__right {
             display: flex;
@@ -52,6 +57,9 @@
             color: var(--blue);
         }
 
+        &__btn:focus {
+            outline: 2px solid var(--black);
+        }
 
         &__main-text{
             text-align: center;
@@ -112,11 +120,23 @@
             &__img{
                 border-radius: 17px;
             }
+            &__img:focus{
+                outline: 2px solid var(--white);
+                border-radius: 22px;
+            }
         }
 
 
         .slick-slide {
             margin: 0 10px;
+        }
+
+        .video-fashion__popup{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
         }
 }
 

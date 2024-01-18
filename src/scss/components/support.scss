@@ -44,6 +44,11 @@
         color: var(--Colors-white-white, #FFF);
         line-height: 25.6px;
         text-decoration: underline;
+        transition: color 0.3s;
+    }
+
+    &__link:hover{
+        color: var(--text-color-black);
     }
 
     &__img {
@@ -63,8 +68,6 @@
         &__text {
             font-size: var(--fz-14);
             max-width: 340px;
-            line-height: 25px;
-            margin-bottom: 48px;
         }
     }
 }
@@ -81,6 +84,12 @@
     .support{
         &__content {
             padding-top: 0px;
+        }
+        &__text {
+            margin-bottom: 20px;
+        }
+        &__item {
+            margin-bottom: 15px;    
         }
     }
 }

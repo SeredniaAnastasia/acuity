@@ -65,6 +65,10 @@
         margin-bottom: 20px;
     }
 
+    .slider-booking__img:focus {
+        outline: 2px solid var(--black);
+    }
+
     .slick-prev, .slick-next{
         top: -30px;
         right: 0;

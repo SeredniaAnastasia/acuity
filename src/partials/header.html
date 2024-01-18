@@ -82,17 +82,24 @@
           </ul>
 
         </div>
-        <!-- <div class="video-fashion__popup">
-          <a class="video-fashion__play" data-fancybox data-width="640" data-height="360" href="https://www.youtube.com/watch?v=MoN9ql6Yymw">
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <div class="video-fashion__popup">
+          <!-- <a class="video-fashion__play" data-fancybox data-width="640" data-height="360" href="https://www.youtube.com/watch?v=MoN9ql6Yymw">
             <img src="./img/play.svg" alt="video play button">
-          </a>
+          </a> -->
+          <a class="video-fashion__play" data-fancybox data-type="iframe"
+          href="https://www.youtube.com/watch?v=_EA0FpNVT5s&list=RD_EA0FpNVT5s&start_radio=1">
+          <img src="./img/play.svg" alt="video play">
+        </a>
           <div class="card-body">
             <p class="card-text">HTML5 video from the page</p>
           </div>
-        </div> -->
-        <!-- <div class="card-deck col-9">
+        </div> 
+         <div class="card-deck col-9">
 
-          <div class="card">
+          <!-- <div class="card">
             <a data-fancybox href="#myVideo">
               <img class="card-img-top img-fluid" src="https://www.html5rocks.com/en/tutorials/video/basics/poster.png" />
             </a>
@@ -110,17 +117,17 @@
       
       
           </div> -->
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        
     <script>
       Fancybox.bind('[data-fancybox]', {
         // Custom options
       });    
 
-      $('.card-deck a').fancybox({
-  caption : function( instance, item ) {
-    return $(this).parent().find('.card-text').html();
-  }
-});
+//       $('.video-fashion__popup a').fancybox({
+//   caption : function( instance, item ) {
+//     return $(this).parent().find('.card-text').html();
+//   }
+// });
     </script>
       </div>
     </div>
