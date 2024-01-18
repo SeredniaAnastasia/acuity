@@ -414,10 +414,6 @@ a {
   max-width: var(--container-width-small);
 }
 
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-}
-
 .centered {
   text-align: center;
 }
@@ -620,6 +616,11 @@ a {
 .header__logo {
   width: 168px;
 }
+.header__logo:focus {
+  padding: 5px;
+  outline: 2px solid var(--blue);
+  border-radius: 20px;
+}
 .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -646,6 +647,9 @@ a {
 .header__btn:hover {
   background-color: var(--white);
   color: var(--blue);
+}
+.header__btn:focus {
+  outline: 2px solid var(--black);
 }
 .header__main-text {
   text-align: center;
@@ -698,8 +702,19 @@ a {
 .header .slider-header__img {
   border-radius: 17px;
 }
+.header .slider-header__img:focus {
+  outline: 2px solid var(--white);
+  border-radius: 22px;
+}
 .header .slick-slide {
   margin: 0 10px;
+}
+.header .video-fashion__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
 }
 
 @media (max-width: 700px) {
@@ -918,6 +933,9 @@ a {
 .booking .slider-booking__img {
   margin-bottom: 20px;
 }
+.booking .slider-booking__img:focus {
+  outline: 2px solid var(--black);
+}
 .booking .slick-prev, .booking .slick-next {
   top: -30px;
   right: 0;
@@ -1111,6 +1129,16 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 }
+.partners__link:focus {
+  border-radius: 70px;
+}
+
+@media (max-width: 500px) {
+  .partners__link img {
+    width: 150px;
+    height: 100px;
+  }
+}
 /* stylelint-disable */
 .support {
   margin-bottom: 20px;
@@ -1153,10 +1181,17 @@ a {
   color: var(--Colors-white-white, #FFF);
   line-height: 25.6px;
   text-decoration: underline;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.support__link:hover {
+  color: var(--text-color-black);
 }
 .support__img {
   -ms-grid-column-align: end;
   justify-self: end;
+}
+.support__img img {
   max-width: 557px;
   width: 100%;
 }
@@ -1170,8 +1205,6 @@ a {
   .support__text {
     font-size: var(--fz-14);
     max-width: 340px;
-    line-height: 25px;
-    margin-bottom: 48px;
   }
 }
 @media (max-width: 815px) {
@@ -1182,6 +1215,12 @@ a {
 @media (max-width: 500px) {
   .support__content {
     padding-top: 0px;
+  }
+  .support__text {
+    margin-bottom: 20px;
+  }
+  .support__item {
+    margin-bottom: 15px;
   }
 }
 /* stylelint-disable */
@@ -1215,12 +1254,20 @@ a {
   background-size: 20px 20px;
   background-position: right 0.7em top 50%, 0 0;
 }
+.footer__language__language:focus {
+  outline: 2px solid var(--gray);
+}
 .footer__logo {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   -ms-grid-row: 2;
   grid-row: 2/2;
+}
+.footer__logo:focus {
+  outline: 2px solid var(--blue);
+  padding: 5px;
+  border-radius: 20px;
 }
 .footer__nav {
   display: -webkit-box;
@@ -1257,6 +1304,18 @@ a {
   font-family: "QuicksandRegular", sans-serif;
   color: var(--buttom-text);
   font-size: var(--fz-16);
+  -webkit-transition: -webkit-text-decoration 0.3s;
+  transition: -webkit-text-decoration 0.3s;
+  transition: text-decoration 0.3s;
+  transition: text-decoration 0.3s, -webkit-text-decoration 0.3s;
+}
+.footer__links-link:focus {
+  outline: 2px solid var(--blue);
+  padding: 3px;
+  border-radius: 10px;
+}
+.footer__links-link:hover {
+  text-decoration: underline;
 }
 .footer__follow {
   display: inline-block;
@@ -1274,6 +1333,18 @@ a {
   font-family: "QuicksandRegular", sans-serif;
   color: var(--buttom-text);
   font-size: var(--fz-16);
+  -webkit-transition: -webkit-text-decoration 0.3s;
+  transition: -webkit-text-decoration 0.3s;
+  transition: text-decoration 0.3s;
+  transition: text-decoration 0.3s, -webkit-text-decoration 0.3s;
+}
+.footer__follow-link:focus {
+  outline: 2px solid var(--blue);
+  padding: 3px;
+  border-radius: 10px;
+}
+.footer__follow-link:hover {
+  text-decoration: underline;
 }
 .footer__touch {
   display: inline-block;
@@ -1291,5 +1362,17 @@ a {
   font-family: "QuicksandRegular", sans-serif;
   color: var(--buttom-text);
   font-size: var(--fz-16);
+  -webkit-transition: -webkit-text-decoration 0.3s;
+  transition: -webkit-text-decoration 0.3s;
+  transition: text-decoration 0.3s;
+  transition: text-decoration 0.3s, -webkit-text-decoration 0.3s;
+}
+.footer__touch-link:focus {
+  outline: 2px solid var(--blue);
+  padding: 3px;
+  border-radius: 10px;
+}
+.footer__touch-link:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */

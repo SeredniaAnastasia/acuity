@@ -26,4 +26,14 @@
   -ms-flex-pack: center;
   justify-content: center;
 }
+.partners__link:focus {
+  border-radius: 70px;
+}
+
+@media (max-width: 500px) {
+  .partners__link img {
+    width: 150px;
+    height: 100px;
+  }
+}
 /*# sourceMappingURL=partners.css.map */

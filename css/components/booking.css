@@ -55,6 +55,9 @@
 .booking .slider-booking__img {
   margin-bottom: 20px;
 }
+.booking .slider-booking__img:focus {
+  outline: 2px solid var(--black);
+}
 .booking .slick-prev, .booking .slick-next {
   top: -30px;
   right: 0;
