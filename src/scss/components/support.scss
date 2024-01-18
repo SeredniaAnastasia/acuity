@@ -53,8 +53,11 @@
 
     &__img {
         justify-self: end;
-        max-width: 557px;
-        width: 100%;
+        img{
+            max-width: 557px;
+            width: 100%;
+
+        }
     }
 }
     
