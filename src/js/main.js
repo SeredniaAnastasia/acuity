@@ -6,10 +6,11 @@ import './_functions';
 import './_components';
 import './functions/burger';
 import './functions/auto-height';
+
 // "slick-slider": "^1.8.2",
 // import fancyboxaa from "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js";
 
-$('variable-width').slick({
+$('.variable-width').slick({
       dots: false,
       arrows: false,
       infinite: true,
@@ -21,7 +22,7 @@ $('variable-width').slick({
       variableWidth: true
     });
   
-    $('.booking-slider').slick({
+$('.booking-slider').slick({
       dots: false,
       arrows: true,
       infinite: true,
