@@ -1529,24 +1529,15 @@ a {
   outline: 2px solid var(--white);
   border-radius: 22px;
 }
-.header .swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 20px;
-}
-.header .swiper-slide {
-  width: 400px;
-  height: 224px;
-}
 .header .slick-slide {
   margin: 0 10px;
+}
+.header .video-fashion__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
 }
 
 @media (max-width: 700px) {
