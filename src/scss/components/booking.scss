@@ -24,7 +24,6 @@
         @include InterRegular;
         font-size: var(--fz-16);
         line-height: 26px;
-
     }
 
     &__img {
@@ -56,34 +55,18 @@
         align-self: flex-end;
     }
 
-
-    .slick-slide {
-        margin: 0 10px;
+    &__bottom-slider{
+        position: relative;
     }
 
-    .slider-booking__img {
-        margin-bottom: 20px;
+    .swiper-button-prev{
+        position: absolute;
     }
 
-    .slider-booking__img:focus {
-        outline: 2px solid var(--black);
+    .swiper-button-next{
+        position: absolute;
     }
-
-    .slick-prev, .slick-next{
-        top: -30px;
-        right: 0;
-    }
-
-    .slick-prev{
-        left: inherit;
-        right: 40px;
-    }
-
-    .slick-next{
-       right: 0;
-    }
-    
-    .slick-prev::before{
+    .swiper-button-prev::after{
         content: '';
         position: absolute;
         background-image: url("./../../img/left.svg");
@@ -92,8 +75,8 @@
         top: 0;
         right: 0;
     }
-    
-    .slick-next::after{
+
+    .swiper-button-next::after{
         content: '';
         position: absolute;
         background-image: url("./../../img/right.svg");
@@ -102,6 +85,33 @@
         top: 0;
         right: 0;
     }
+     .swiper-button-prev, .swiper-button-next{
+        top: -30px;
+        right: 0;
+    }
+
+    .swiper-button-prev{
+        left: inherit;
+        right: 40px;
+    }
+
+    .swiper-button-next{
+       right: 0;
+    }
+
+    .swiper-wrapper{
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        gap: 20px;
+    }
+
+    .swiper-slide {
+        width: initial;
+        height: initial;
+    }
+
+  
 }
 
 

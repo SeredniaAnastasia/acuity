@@ -126,18 +126,33 @@
             }
         }
 
+        &__main-slider{
+            // overflow: hidden;
+        }
+        
+        .swiper-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .swiper-slide {
+            width: 400px;
+            height: 224px; ;
+        }
 
         .slick-slide {
             margin: 0 10px;
         }
 
-        .video-fashion__popup{
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 200px;
-            height: 200px;
-        }
+        // .video-fashion__popup{
+        //     position: fixed;
+        //     top: 0;
+        //     left: 0;
+        //     width: 200px;
+        //     height: 200px;
+        // }
 }
 
 

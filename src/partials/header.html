@@ -37,58 +37,70 @@
                 No credit card needed
                </p>
         </div>
-        <div class="header__main-slider slider-header">
-          <ul class="slider-header__list variable-width">
-            <li class="slider-header__item">
+        <div id="swiper-container" class="header__main-slider slider-header swiper-container">
+          <ul class="slider-header__list variable-width swiper-wrapper">
+            <li class="slider-header__item swiper-slide">
               <a class="slider-header__link" href="#">
                <picture>
                 <source srcset="./img/header/blowout@2x.webp" type="image/webp">
-                <img loading="lazy" src="./img/header/blowout@2x.jpg" class="slider-header__img" width="400" height="225" alt="blowout">
+                <img  src="./img/header/blowout@2x.jpg" class="slider-header__img" width="400" height="225" alt="blowout">
               </picture>
               </a>
             </li>
-            <li class="slider-header__item">
+            <li class="slider-header__item swiper-slide">
               <a class="slider-header__link" href="#">
                <picture>
                 <source srcset="./img/header/hair@2x.webp" type="image/webp">
-                <img loading="lazy" src="./img/header/hair@2x.jpg" class="slider-header__img" width="400" height="225" alt="hair appointment">
+                <img  src="./img/header/hair@2x.jpg" class="slider-header__img" width="400" height="225" alt="hair appointment">
               </picture>
               </a>
             </li>
-            <li class="slider-header__item">
+            <li class="slider-header__item swiper-slide">
               <a class="slider-header__link" href="#">
                <picture>
                 <source srcset="./img/header/reiki@2x.webp" type="image/webp">
-                <img loading="lazy" src="./img/header/reiki@2x.jpg" class="slider-header__img" width="400" height="225" alt="reiki session">
+                <img  src="./img/header/reiki@2x.jpg" class="slider-header__img" width="400" height="225" alt="reiki session">
               </picture>
               </a>
             </li>
-            <li class="slider-header__item">
+            <li class="slider-header__item swiper-slide">
               <a class="slider-header__link" href="#">
                <picture>
                 <source srcset="./img/header/lens@2x.webp" type="image/webp">
-                <img loading="lazy" src="./img/header/lens@2x.jpg" class="slider-header__img" width="400" height="225" alt="lens adjustment">
+                <img  src="./img/header/lens@2x.jpg" class="slider-header__img" width="400" height="225" alt="lens adjustment">
               </picture>
               </a>
             </li>
-            <li class="slider-header__item">
+            <li class="slider-header__item swiper-slide">
               <a class="slider-header__link" href="#">
                <picture>
                 <source srcset="./img/header/car@2x.webp" type="image/webp">
-                <img loading="lazy" src="./img/header/car@2x.jpg" class="slider-header__img" width="400" height="225" alt="car detailing">
+                <img  src="./img/header/car@2x.jpg" class="slider-header__img" width="400" height="225" alt="car detailing">
               </picture>
               </a>
             </li>
+            <li class="slider-header__item swiper-slide">
+              <a class="slider-header__link" href="#">
+               <picture>
+                <source srcset="./img/header/car@2x.webp" type="image/webp">
+                <img  src="./img/header/car@2x.jpg" class="slider-header__img" width="400" height="225" alt="car detailing">
+              </picture>
+              </a>
+            </li>
+
           </ul>
 
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
+
+     
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-        <div class="video-fashion__popup">
-          <!-- <a class="video-fashion__play" data-fancybox data-width="640" data-height="360" href="https://www.youtube.com/watch?v=MoN9ql6Yymw">
+         
+         <div class="video-fashion__popup">
+           <a class="video-fashion__play" data-fancybox data-width="640" data-height="360" href="https://www.youtube.com/watch?v=MoN9ql6Yymw">
             <img src="./img/play.svg" alt="video play button">
-          </a> -->
+          </a> 
           <a class="video-fashion__play" data-fancybox data-type="iframe"
           href="https://www.youtube.com/watch?v=_EA0FpNVT5s&list=RD_EA0FpNVT5s&start_radio=1">
           <img src="./img/play.svg" alt="video play">
@@ -96,7 +108,7 @@
           <div class="card-body">
             <p class="card-text">HTML5 video from the page</p>
           </div>
-        </div> 
+        </div>  
          <div class="card-deck col-9">
 
           <!-- <div class="card">
