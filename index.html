@@ -88,7 +88,7 @@
                 No credit card needed
                </p>
         </div>
-        <div class="header__main-slider slider-header swiper-container">
+        <div id="swiper-container" class="header__main-slider slider-header swiper-container">
           <ul class="slider-header__list variable-width swiper-wrapper">
             <li class="slider-header__item swiper-slide">
               <a class="slider-header__link" href="#">
@@ -130,17 +130,27 @@
               </picture>
               </a>
             </li>
+            <li class="slider-header__item swiper-slide">
+              <a class="slider-header__link" href="#">
+               <picture>
+                <source srcset="./img/header/car@2x.webp" type="image/webp">
+                <img  src="./img/header/car@2x.jpg" class="slider-header__img" width="400" height="225" alt="car detailing">
+              </picture>
+              </a>
+            </li>
+
           </ul>
 
           <!-- <div class="swiper-pagination"></div> -->
         </div>
+
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <div class="video-fashion__popup">
-          <!-- <a class="video-fashion__play" data-fancybox data-width="640" data-height="360" href="https://www.youtube.com/watch?v=MoN9ql6Yymw">
+         <div class="video-fashion__popup">
+           <a class="video-fashion__play" data-fancybox data-width="640" data-height="360" href="https://www.youtube.com/watch?v=MoN9ql6Yymw">
             <img src="./img/play.svg" alt="video play button">
-          </a> -->
+          </a>
           <a class="video-fashion__play" data-fancybox data-type="iframe"
           href="https://www.youtube.com/watch?v=_EA0FpNVT5s&list=RD_EA0FpNVT5s&start_radio=1">
           <img src="./img/play.svg" alt="video play">
@@ -294,9 +304,9 @@
                       your needs
                     </p>
                   </div>
-                  <div class="booking__bottom-slider">
-                    <ul class="slider-booking__list booking-slider">
-                      <li class="slider-booking__item">
+                  <div id="swiper-container1" class="booking__bottom-slider swiper-container">
+                    <ul class="slider-booking__list booking-slider swiper-wrapper">
+                      <li class="slider-booking__item swiper-slide">
                         <a class="slider-booking__link" href="#">
                           <figure>
                             <picture>
@@ -307,7 +317,7 @@
                           </figure>
                         </a>
                       </li>
-                      <li class="slider-booking__item">
+                      <li class="slider-booking__item swiper-slide">
                         <a class="slider-booking__link" href="#">
                           <figure>
                             <picture>
@@ -318,7 +328,7 @@
                           </figure>
                         </a>
                       </li>
-                      <li class="slider-booking__item">
+                      <li class="slider-booking__item swiper-slide">
                         <a class="slider-booking__link" href="#">
                           <figure>
                             <picture>
@@ -329,7 +339,52 @@
                           </figure>
                         </a>
                       </li>
-                      <li class="slider-booking__item">
+                      <li class="slider-booking__item swiper-slide">
+                        <a class="slider-booking__link" href="#">
+                          <figure>
+                            <picture>
+                              <source srcset="./img/booking/utility@2x.webp" type="image/webp">
+                              <img loading="lazy" src="./img/booking/utility@2x.jpg" class="slider-booking__img" width="350" height="240" alt="financial">
+                            </picture>
+                            <figcaption>Automotive and Maintenance</figcaption>
+                          </figure>
+                        </a>
+                      </li>
+
+                      <li class="slider-booking__item swiper-slide">
+                        <a class="slider-booking__link" href="#">
+                          <figure>
+                            <picture>
+                              <source srcset="./img/booking/education@2x.webp" type="image/webp">
+                              <img loading="lazy" src="./img/booking/education@2x.jpg" class="slider-booking__img" width="350" height="240" alt="financial">
+                            </picture>
+                            <figcaption>Education and Tutoring</figcaption>
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="slider-booking__item swiper-slide">
+                        <a class="slider-booking__link" href="#">
+                          <figure>
+                            <picture>
+                              <source srcset="./img/booking/financial@2x.webp" type="image/webp">
+                              <img loading="lazy" src="./img/booking/financial@2x.jpg" class="slider-booking__img" width="350" height="240" alt="financial">
+                            </picture>
+                            <figcaption>Financial, Public and Legal Services</figcaption>
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="slider-booking__item swiper-slide">
+                        <a class="slider-booking__link" href="#">
+                          <figure>
+                            <picture>
+                              <source srcset="./img/booking/pet@2x.webp" type="image/webp">
+                              <img loading="lazy" src="./img/booking/pet@2x.jpg" class="slider-booking__img" width="350" height="240" alt="financial">
+                            </picture>
+                            <figcaption>Pet Care and Grooming</figcaption>
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="slider-booking__item swiper-slide">
                         <a class="slider-booking__link" href="#">
                           <figure>
                             <picture>
@@ -341,11 +396,14 @@
                         </a>
                       </li>
                     </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                   </div>
                 </div>
               </div>
             </div>
       </section>
+
       <section class="our-benefits">
         <div class="container">
           <div class="our-benefits__wrapper">
@@ -585,6 +643,29 @@
 </footer>
 
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+const swiper = new Swiper('#swiper-container', {
+ slidesPerView: "auto",
+ loop: true, 
+ autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+});
+
+const swiper2 = new Swiper('#swiper-container1', {
+ slidesPerView: "auto",
+ navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+});
+    </script>
 </body>
 
 </html>

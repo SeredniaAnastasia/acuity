@@ -1530,11 +1530,20 @@ a {
   border-radius: 22px;
 }
 .header .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 20px;
 }
 .header .swiper-slide {
-  width: initial;
-  height: initial;
+  width: 400px;
+  height: 224px;
 }
 .header .slick-slide {
   margin: 0 10px;

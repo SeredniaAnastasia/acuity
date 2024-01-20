@@ -49,27 +49,16 @@
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
-.booking .slick-slide {
-  margin: 0 10px;
+.booking__bottom-slider {
+  position: relative;
 }
-.booking .slider-booking__img {
-  margin-bottom: 20px;
+.booking .swiper-button-prev {
+  position: absolute;
 }
-.booking .slider-booking__img:focus {
-  outline: 2px solid var(--black);
+.booking .swiper-button-next {
+  position: absolute;
 }
-.booking .slick-prev, .booking .slick-next {
-  top: -30px;
-  right: 0;
-}
-.booking .slick-prev {
-  left: inherit;
-  right: 40px;
-}
-.booking .slick-next {
-  right: 0;
-}
-.booking .slick-prev::before {
+.booking .swiper-button-prev::after {
   content: "";
   position: absolute;
   background-image: url("./../../img/left.svg");
@@ -78,7 +67,7 @@
   top: 0;
   right: 0;
 }
-.booking .slick-next::after {
+.booking .swiper-button-next::after {
   content: "";
   position: absolute;
   background-image: url("./../../img/right.svg");
@@ -86,6 +75,30 @@
   height: 12px;
   top: 0;
   right: 0;
+}
+.booking .swiper-button-prev, .booking .swiper-button-next {
+  top: -30px;
+  right: 0;
+}
+.booking .swiper-button-prev {
+  left: inherit;
+  right: 40px;
+}
+.booking .swiper-button-next {
+  right: 0;
+}
+.booking .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 20px;
+}
+.booking .swiper-slide {
+  width: initial;
+  height: initial;
 }
 
 @media (max-width: 800px) {
