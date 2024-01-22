@@ -8,7 +8,7 @@ import './functions/burger';
 import './functions/auto-height';
 
 // "slick-slider": "^1.8.2",
-// import fancyboxaa from "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js";
+// import "@fancyapps/fancybox";
 
 $('.variable-width').slick({
       dots: false,

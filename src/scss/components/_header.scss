@@ -86,7 +86,6 @@
             margin: 0 auto;
             margin-bottom: 32px;
             line-height: 25px;
-
         }
 
         &__main-btn{
@@ -132,11 +131,14 @@
         }
 
         .video-fashion__popup{
-            position: fixed;
+            // position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             top: 0;
             left: 0;
-            width: 200px;
-            height: 200px;
+            width: 530px;
+            height: 480px;
         }
 }
 
