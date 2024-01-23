@@ -50,23 +50,34 @@
 // });
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper('#swiper-container', {
-//      slidesPerView: "auto",
-//      autoplay: {
-//           delay: 2500,
-//           disableOnInteraction: false,
-//         },
-// });
+import Swiper, { Navigation, Autoplay } from 'swiper';
+Swiper.use([Navigation, Autoplay]);
 
-// const swiper2 = new Swiper('#swiper-container1', {
-//      slidesPerView: "auto",
-//      navigation: {
-//           nextEl: ".swiper-button-next",
-//           prevEl: ".swiper-button-prev",
-//         },
-   
+
+const swiperElement1 = document.querySelector('.slider-1')
+const swiper = new Swiper(swiperElement1, {
+slidesPerView: "auto",
+centeredSlides: true,
+spaceBetween: 20,
+loop: true, 
+autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+});
+
+const swiperElement2 = document.querySelector('.slider-2')
+const swiper2 = new Swiper(swiperElement2, {
+slidesPerView: "auto",
+centeredSlides: true,
+spaceBetween: 20,
+loop: true, 
+navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+});
 // });
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
@@ -96,3 +107,4 @@
 // };
 
 // validateForms('.form-1', rules1, afterForm);
+

@@ -114,7 +114,11 @@
                       your needs
                     </p>
                   </div>
-                  <div id="swiper-container1" class="booking__bottom-slider swiper-container">
+                  <div class="swiper-arrows">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <div  class="slider-2 booking__bottom-slider swiper-container">
                     <ul class="slider-booking__list booking-slider swiper-wrapper">
                       <li class="slider-booking__item swiper-slide">
                         <a class="slider-booking__link" href="#">
@@ -206,8 +210,6 @@
                         </a>
                       </li>
                     </ul>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                   </div>
                 </div>
               </div>
@@ -375,29 +377,6 @@
     <!-- @include('html/h1.html') пример include -->
   </div>
  
- 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-const swiper = new Swiper('#swiper-container', {
- slidesPerView: "auto",
- loop: true, 
- autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-});
-
-const swiper2 = new Swiper('#swiper-container1', {
- slidesPerView: "auto",
- navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-});
-    </script>
 </body>
 
 </html>

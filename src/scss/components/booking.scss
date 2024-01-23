@@ -56,15 +56,15 @@
     }
 
     &__bottom-slider{
-        position: relative;
+       
     }
 
     .swiper-button-prev{
-        position: absolute;
+
     }
 
     .swiper-button-next{
-        position: absolute;
+        // position: absolute;
     }
     .swiper-button-prev::after{
         content: '';
@@ -99,11 +99,14 @@
        right: 0;
     }
 
-    .swiper-wrapper{
-        display: flex;
-        justify-content: center;
-        // align-items: center;
-        gap: 20px;
+    .swiper-container{
+        overflow: hidden;
+        
+    }
+
+    .swiper-arrows{
+        position: relative;
+       right: 0;
     }
 
     .swiper-slide {

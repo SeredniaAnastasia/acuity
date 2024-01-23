@@ -126,15 +126,9 @@
             }
         }
 
-        &__main-slider{
-            // overflow: hidden;
-        }
-        
-        .swiper-wrapper{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
+      
+        .swiper-container{
+            overflow: hidden;
         }
 
         .swiper-slide {
