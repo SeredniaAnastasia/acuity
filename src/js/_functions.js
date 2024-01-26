@@ -53,7 +53,6 @@
 import Swiper, { Navigation, Autoplay } from 'swiper';
 Swiper.use([Navigation, Autoplay]);
 
-
 const swiperElement1 = document.querySelector('.slider-1')
 const swiper = new Swiper(swiperElement1, {
 slidesPerView: "auto",

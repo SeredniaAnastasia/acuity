@@ -1,9 +1,7 @@
 
-@import "./vendor";
-// базовые подключения
-@import "./vars";
-// @import "vendor/reset";
 @import "./reset";
+@import "./vars";
+@import "./vendor";
 
 @import "./mixins";
 @import "./fonts";
